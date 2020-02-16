@@ -1,5 +1,5 @@
-# qdtroemner.io
-Welcome to [qdtroemner's website](https://qdtroemner.io/)!
+# qdtroemner.github.io
+Welcome to [qdtroemner's website](https://qdtroemner.github.io/)!
 Last Updated 2/15/2020
 
 Developed with [CodePen](https://codepen.io/).
