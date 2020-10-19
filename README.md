@@ -6,4 +6,3 @@ Developed with [CodePen](https://codepen.io/).
 ## Versions
 1. [Original Pen](https://codepen.io/CurtLiom/pen/jOOYeYp/)
 2. [V2](https://codepen.io/qdtroemner/pen/pobbezL)
-  - Simpler design
