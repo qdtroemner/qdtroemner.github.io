@@ -60,9 +60,10 @@ section {
 		linear-gradient(rgba(11, 132, 253, 0.8), rgba(11, 132, 253, 0.8)),
 		url('https://d155kunxf1aozz.cloudfront.net/wp-content/uploads/freshizer/c08547c13e7bee16d9c2a65eb4997bb1_Indy-cropped-2-1900-c-90.jpg');
 	background-size: fill;
+	background-repeat: no-repeat;
 	background-position-x: center;
 	background-attachment: fixed;
-	animation: parallax-scroll 3s infinite;
+	animation: parallax-scroll 5s infinite;
 	animation-direction: alternate;
 	animation-timing-function: ease-in-out;
 }
