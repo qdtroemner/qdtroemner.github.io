@@ -1,24 +1,11 @@
 @font-face {
-	font-family: 'Shapiro';
-	src: url('../shapiro-air.ttf');
-	font-weight: bolder;
-}
-
-@font-face {
-	font-family: 'Shapiro';
-	src: url('../shapiro-feather.ttf');
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'Shapiro';
-	src: url('../shapiro-light.ttf');
-	font-weight: thin;
+	font-family: 'Inter';
+	src: url('../inter.ttf');
 }
 
 * {
 	margin: 0;
-	font-family: Shapiro;
+	font-family: Inter;
 }
 
 html, body {
@@ -38,7 +25,7 @@ section {
 .big-header {
 	font-size: 50px;
 	margin-bottom: 15px;
-	font-weight: normal;
+	font-weight: 900;
 }
 
 .fab { /*icons*/
@@ -69,7 +56,7 @@ section {
 }
 
 #name {
-	-webkit-text-fill-color: #EEE;
+	
 }
 
 #social-links {
