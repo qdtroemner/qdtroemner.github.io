@@ -3,7 +3,13 @@
 	src: url('../Inter.ttf');
 }
 
-@media only screen and (max-width: 475px) {
+@media screen and (min-width: 475px) {
+	.big-header {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 474px) {
 	.big-header {
 		font-size: 25px;
 	}
