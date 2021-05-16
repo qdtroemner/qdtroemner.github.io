@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'Free Sans';
+    src: url("../fonts/Free Sans Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url("../fonts/Akira Expanded Demo.otf");
+}
+
 * {
 	margin: 0;
-    background-color: black;
 }
 
 html, body {
@@ -8,8 +17,31 @@ html, body {
 	display: flex;
 	flex-direction: column; flex-wrap: wrap;
 	align-items: center; justify-content: center;
+    background-color: black;
     background-image: url("../images/david.png");
+    background-size: contain;
 }
 
-#bg-img {
+h1 {
+    white-space: nowrap;
+    font-family: 'Free Sans';
+    color: white;
+    text-shadow: 3px 3px 1px black, -3px -3px 1px black, -3px 3px 1px black, 3px -3px 1px black;
+}
+
+#time {
+    font-size: 3em;
+}
+
+#social-wrapper {
+    position: absolute;
+    bottom: 0;
+    height: 3em;
+}
+
+a {
+    padding: 0.7em;
+    color: white;
+    font-family: 'Free Sans';
+    text-decoration: none;
 }
