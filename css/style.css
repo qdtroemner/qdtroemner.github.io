@@ -39,7 +39,7 @@ h1 {
     height: 3em;
 }
 
-a {
+.social-link {
     padding: 0.7em;
     color: white;
     font-family: 'Free Sans';
@@ -53,11 +53,16 @@ a {
 
 #voting-form {
 	font-style: italic;
-	color: #AAF; !important
+	color: #AAF;
+	text-decoration: none;
+}
+
+#vote-header {
+	word-break: break-word;
+	white-space: normal;
 }
 
 #voting-info {
-	white-space: nowrap;
     font-family: 'Free Sans';
     color: white;
     text-shadow: 3px 3px 1px black, -3px -3px 1px black, -3px 3px 1px black, 3px -3px 1px black;
