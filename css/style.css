@@ -45,3 +45,20 @@ a {
     font-family: 'Free Sans';
     text-decoration: none;
 }
+
+#vote-wrapper {
+	background-color: #000A;
+	padding: 15px;
+}
+
+#voting-form {
+	font-style: italic;
+	color: #AAF; !important
+}
+
+#voting-info {
+	white-space: nowrap;
+    font-family: 'Free Sans';
+    color: white;
+    text-shadow: 3px 3px 1px black, -3px -3px 1px black, -3px 3px 1px black, 3px -3px 1px black;
+}
