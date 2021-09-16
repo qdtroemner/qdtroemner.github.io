@@ -60,6 +60,7 @@ h1 {
 #vote-header {
 	word-break: break-word;
 	white-space: normal;
+	line-height: 0.9em;
 }
 
 #voting-info {
