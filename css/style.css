@@ -45,26 +45,3 @@ h1 {
     font-family: 'Free Sans';
     text-decoration: none;
 }
-
-#vote-wrapper {
-	background-color: #000A;
-	padding: 15px;
-}
-
-#voting-form {
-	font-style: italic;
-	color: #AAF;
-	text-decoration: none;
-}
-
-#vote-header {
-	word-break: break-word;
-	white-space: normal;
-	line-height: 0.9em;
-}
-
-#voting-info {
-    font-family: 'Free Sans';
-    color: white;
-    text-shadow: 3px 3px 1px black, -3px -3px 1px black, -3px 3px 1px black, 3px -3px 1px black;
-}
