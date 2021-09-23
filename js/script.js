@@ -1,7 +1,10 @@
 const albums = [
-    "album/07bIdDDe3I3hhWpxU6tuBp",
-    "album/4PWBTB6NYSKQwfo79I3prg",
-    "album/3r46DPIQeBQbjvjjV5mXGg",
+    "album/7D2NdGvBHIavgLhmcwhluK", // Yeezus
+    "album/3tgJmEz0R0ZsRSrpwafp4R", // Curtis
+    "album/0zicd2mBV8HTzSubByj4vP", // LUV is Rage
+    "album/755yBlrk0Sz8tIgMMTgyr1", // We Will Always Love You
+    "album/07bIdDDe3I3hhWpxU6tuBp", // Daytona
+    "album/0bCAjiUamIFqKJsekOYuRw", // Wish You Were Here
     /*"album/340MjPcVdiQRnMigrPybZA",
     "album/622NFw5Yk0OReMJ2XWcXUh",
     "album/2suR5CCbtL2Wq8ShFo8rFr",
@@ -28,7 +31,6 @@ const albums = [
     "album/7xJ7jHNu3JNfdnao9xwMho",
     "album/47ASXS1yLPfpc8yeeNQCIx",
     "album/20r762YmB5HeofjMCiPMLv",
-    "album/7D2NdGvBHIavgLhmcwhluK",
     "album/7gsWAHLeT0w7es6FofOXk1",
     "album/1hZUz53ExRTOBqQKuJCbXX",
     "album/1Sf8GsXG32t0jNrX11xqWx",
@@ -40,8 +42,7 @@ const albums = [
     "album/3gPlX9Zs3tXZZKNCyoOkSm",
     "album/2QRedhP5RmKJiJ1i8VgDGR",
     "album/3WFTGIO6E3Xh4paEOBY9OU",
-    "album/3GBnNRYsxBfEeMSMmTpJ25",
-    "album/755yBlrk0Sz8tIgMMTgyr1",*/
+    "album/3GBnNRYsxBfEeMSMmTpJ25",*/
 ];
 
 var albumContainer = document.getElementById('albums');
