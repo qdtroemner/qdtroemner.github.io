@@ -79,7 +79,7 @@ iframe {
 	padding-bottom: 1.5em;
 }
 
-figure {
+.img-inline {
 	display: flex;
 	flex-direction: column;
 }
@@ -87,6 +87,7 @@ figure {
 img {
 	max-width: 100%;
 	margin-top: 0.5em;
+	vertical-align: middle;
 }
 
 figcaption {
