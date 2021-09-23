@@ -13,10 +13,12 @@
 	font-family: 'Free Sans';
 }
 
-html, body {
-    width: 100%; height: 100%;
+body {
+    width: 100%;
     display: flex;
     flex-direction: column;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 section {
@@ -35,7 +37,6 @@ i {
 	width: 100%; height: 3.5em;
 	background: white;
 	position: sticky; top: 0;
-	padding: 0.5em 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -50,9 +51,6 @@ i {
 	justify-content: space-evenly;
 }
 
-#h-social {
-}
-
 #ul-social {
 	list-style-type: none;
 	padding: 0;
@@ -65,7 +63,7 @@ i {
 #albums {
 	max-width: 100%;
 	min-height: 15em;
-	height: 15em;
+	height: 20em;
 	margin: 0.5em 1em;
 	display: flex;
 	align-items: center;
@@ -81,6 +79,18 @@ iframe {
 	padding-bottom: 1.5em;
 }
 
+figure {
+	display: flex;
+	flex-direction: column;
+}
+
 img {
 	max-width: 100%;
+	margin-top: 0.5em;
+}
+
+figcaption {
+	font-size: 0.7em;
+	font-family: 'Calibri';
+	padding: 0.3em 0.4em 0 0.4em;
 }
