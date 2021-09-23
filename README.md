@@ -1,6 +1,6 @@
 # qdtroemner.github.io
 Welcome to [qdtroemner's website](https://qdtroemner.github.io/)!
-> Last Updated 9/17/2021
+> Last Updated 9/23/2021
 
 Developed with [CodePen](https://codepen.io/).
 ### Versions
