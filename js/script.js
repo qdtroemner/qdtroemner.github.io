@@ -1,9 +1,8 @@
 const albums = [
-    "album/5kE2OAuUYGBqqzscqgBXXf",
     "album/07bIdDDe3I3hhWpxU6tuBp",
     "album/4PWBTB6NYSKQwfo79I3prg",
     "album/3r46DPIQeBQbjvjjV5mXGg",
-    "album/340MjPcVdiQRnMigrPybZA",
+    /*"album/340MjPcVdiQRnMigrPybZA",
     "album/622NFw5Yk0OReMJ2XWcXUh",
     "album/2suR5CCbtL2Wq8ShFo8rFr",
     "album/45ba6QAtNrdv6Ke4MFOKk9",
@@ -42,16 +41,16 @@ const albums = [
     "album/2QRedhP5RmKJiJ1i8VgDGR",
     "album/3WFTGIO6E3Xh4paEOBY9OU",
     "album/3GBnNRYsxBfEeMSMmTpJ25",
-    "album/755yBlrk0Sz8tIgMMTgyr1",
+    "album/755yBlrk0Sz8tIgMMTgyr1",*/
 ];
 
 var albumContainer = document.getElementById('albums');
-document.onload = function() {
+window.onload = function() {
     for(url of albums) {
         let iframe = document.createElement('iframe');
-        iframe.src = `${"embed/" + url}?theme=1`;
-        iframe.width = "100%";
-        iframe.height = "80";
+        iframe.src = `https://open.spotify.com/embed/${url}?theme=1`;
+        iframe.width = "80%";
+        iframe.height = "100%";
         iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
         iframe.allowFullscreen = "";
         albumContainer.appendChild(iframe);

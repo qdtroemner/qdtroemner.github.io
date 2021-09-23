@@ -10,13 +10,65 @@
 
 * {
     margin: 0;
+	font-family: 'Free Sans';
 }
 
 html, body {
     width: 100%; height: 100%;
     display: flex;
     flex-direction: column; flex-wrap: wrap;
-    align-items: center; justify-content: center;
+}
+
+section {
+	margin: 1em 1.5em;
+}
+
+i {
+	color: #333;
+}
+
+.header {
+	white-space: nowrap;
+}
+
+#title-container {
+	width: 100%; height: 3.5em;
+	background: white;
+	position: sticky; top: 0;
+	padding: 0.5em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#h-title {
+	font-size: 1.6em;
+}
+
+#social-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#h-social {
+}
+
+#ul-social {
+	list-style-type: none;
+	padding: 0;
+}
+
+.a-li {
+	font-size: 1em;
+}
+
+#albums {
+	max-width: 100%;
+	height: 15em;
+	margin: 0.5em 1em;
+	display: flex;
+	align-items: center;
+	overflow-x: scroll;
 }
 
 iframe {
