@@ -71,6 +71,20 @@ i {
 	}
 }
 
+@media only screen and (min-width: 375px) {
+	#henry-text {
+		top: 0;
+		margin: 0.5em 0.5em 0 0.5em;
+		font-size: 2.5em;
+	}
+	
+	#voting-info {
+		bottom: 0;
+		font-size: 1.5em;
+		margin: 0 0.5em 0.5em 0.5em;
+	}
+}
+
 @media only screen and (min-width: 600px) {
 	#henry-text {
 		top: 0;
