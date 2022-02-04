@@ -119,7 +119,8 @@ i {
 }
 
 #instagram-highlights {
-
+	display: flex;
+    justify-content: center;
 }
 
 .instagram-media {
