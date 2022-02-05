@@ -38,13 +38,14 @@ for(let i = 0; i < 5; i++) {
 	albums.splice(i, 1);
 }
 
-var albumContainer = document.getElementById('albums');
+var albumContainer = document.getElementById('albums-spotify');
 window.onload = function() {
     for(url of displayedAlbums) {
         let iframe = document.createElement('iframe');
         iframe.src = `https://open.spotify.com/embed/album/${url}?theme=1`;
         iframe.width = "80%";
         iframe.height = "100%";
+		iframe.style.borderWidth = 0;
         iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
         iframe.allowFullscreen = "";
         albumContainer.appendChild(iframe);
