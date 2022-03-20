@@ -62,7 +62,7 @@ function set_next_match_info() {
 	set_stream_URL();
 	set_next_match_info();
 
-	client.get_team_matches().then(data => {
+	/*client.get_team_matches().then(data => {
 		console.log(data);
-	});
+	});*/
 })();
