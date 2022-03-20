@@ -17,7 +17,7 @@ function getTimeFromUNIX(unix) {
 	let formatted_time = "";
 	for (i in time) {
 		let end_pad = i != 2 ? ":" : "";
-		formatted_time += String(time[i]).padStart(2, "0") + end_pad;
+		formatted_time += (i > 0 ? String(time[i]).padStart(2, "0") : String(time[i])) + end_pad;
 	}
 	let period = " AM";
 	if (time[0] >= 12) {
