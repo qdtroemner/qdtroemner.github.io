@@ -95,7 +95,7 @@ function set_next_match_info() {
 	set_next_match_info();
 	window.setInterval(() => {
 		console.log("Updating...");
-		set_stream_URL();
+		//set_stream_URL();
 		set_next_match_info();
 	}, 30000);
 })();
