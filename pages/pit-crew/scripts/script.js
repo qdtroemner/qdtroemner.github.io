@@ -23,8 +23,10 @@ function getTimeFromUNIX(unix) {
 	}
 	let period = " AM";
 	if (time[0] >= 12) {
-		time[0] -= 12;
 		period = " PM";
+	}
+	if (time[0] > 12) {
+		time[0] -= 12;
 	}
 	formatted_time += period;
 	return formatted_time;
@@ -47,7 +49,6 @@ function set_stream_URL() {
 
 function set_next_match_info() {
 	client.get_event_team_statuses().then(event_team_statuses => {
-		console.log(event_team_statuses);
 		client.get_team_status().then(team_status_data => {
 			let next_match_key = team_status_data.next_match_key;
 			client.get_event_matches().then(event_matches_data => {
@@ -92,8 +93,9 @@ function set_next_match_info() {
 	console.log("Ready");
 	set_stream_URL();
 	set_next_match_info();
-
-	/*client.get_team_matches().then(data => {
-		console.log(data);
-	});*/
+	window.setInterval(() => {
+		console.log("Updating...");
+		set_stream_URL();
+		set_next_match_info();
+	}, 30000);
 })();
