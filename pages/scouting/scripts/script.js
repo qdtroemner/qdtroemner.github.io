@@ -1,8 +1,32 @@
-const EVENT = '2022azva';
-const TEAM = 'frc1212';
+const EVENT = '2022incol';
+const TEAM = 'frc1024';
 var client = new TBA(EVENT, TEAM);
 
 const PARENT_URL = 'localhost';
+
+var comp_level_enum = {
+	"qm": "qualification",
+	"qf": "quarter-final",
+	"sf": "semi-final",
+	"f": "final"
+}
+
+function getTimeFromUNIX(unix) {
+	let date = new Date(unix * 1000);
+	let time = [date.getHours(), date.getMinutes(), date.getSeconds()]; // Hours, minutes, seconds
+	let formatted_time = "";
+	for (i in time) {
+		let end_pad = i != 2 ? ":" : "";
+		formatted_time += String(time[i]).padStart(2, "0") + end_pad;
+	}
+	let period = " AM";
+	if (time[0] >= 12) {
+		time[0] -= 12;
+		period = " PM";
+	}
+	formatted_time += period;
+	return formatted_time;
+}
 
 function set_stream_URL() {
 	client.get_event().then(data => {
@@ -20,36 +44,34 @@ function set_stream_URL() {
 }
 
 function set_next_match_info() {
-	/*client.get_team_matches().then(data => {
-		let next_match = Infinity; // Set it to highest possible value and work down
-		for (match of data) {
-			let n = match.match_number;
-			if (match.actual_time != null) {
-				continue;
-			}
-			if (n < next_match) {
-				next_match = n;
-			}
-		}
-		if (next_match == Infinity) {next_match = "None"}
-		document.getElementById('next-match-label').innerHTML = next_match;
-	});*/
 	client.get_team_status().then(team_status_data => {
 		let next_match_key = team_status_data.next_match_key;
 		client.get_event_matches().then(event_matches_data => {
 			for (match of event_matches_data) {
 				if (match.key == next_match_key) {
-					document.getElementById('next-match-label').innerHTML = match.match_number;
-					red_team_keys = match.alliances.red.team_keys;
-					red_team_key_cells = document.getElementById("blue-alliance").getElementsByClassName("team-key");
-					for (cell_i in red_team_key_cells) {
-						red_team_key_cells[cell_i].innerText = red_team_keys[cell_i];
-					}
-					blue_team_keys = match.alliances.red.team_keys;
-					blue_team_key_cells = document.getElementById("blue-alliance").getElementsByClassName("team-key");
-					for (cell_i in blue_team_key_cells) {
-						blue_team_key_cells[cell_i].innerText = blue_team_keys[cell_i];
-					}
+					// Match #
+					document.getElementById('next-match-label').innerHTML = `Next match is ${comp_level_enum[match.comp_level]} ${match.match_number}`;
+					// ETA
+					let estimated_UNIX_start = match.predicted_time;
+					let formatted_estimated_start = getTimeFromUNIX(estimated_UNIX_start);
+					document.getElementById('next-match-time').innerHTML = `Estimated start is ${formatted_estimated_start}`;
+					// Alliance Info
+						// Blue alliance
+							// Teams
+							blue_team_keys = match.alliances.blue.team_keys;
+							blue_team_key_cells = document.getElementById("blue-alliance").getElementsByClassName("team-key");
+							for (cell_i in blue_team_key_cells) {
+								blue_team_key_cells[cell_i].innerHTML = 
+									blue_team_keys[cell_i] == TEAM ? `<span id="team-highlight">${blue_team_keys[cell_i]}</span>` : blue_team_keys[cell_i];
+							}
+						// Red alliance
+							// Teams
+							red_team_keys = match.alliances.red.team_keys;
+							red_team_key_cells = document.getElementById("red-alliance").getElementsByClassName("team-key");
+							for (cell_i in red_team_key_cells) {
+								red_team_key_cells[cell_i].innerHTML = 
+									red_team_keys[cell_i] == TEAM ? `<span id="team-highlight">${red_team_keys[cell_i]}</span>` : red_team_keys[cell_i];
+							}
 					break;
 				}
 			}

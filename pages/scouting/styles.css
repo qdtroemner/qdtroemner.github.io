@@ -7,9 +7,9 @@ h1, h2, h3 {
 	font-family: sans-serif;
 }
 
-h1 { color: #000; margin-bottom: 0em; }
-h2 { color: #333; margin-bottom: 0em; }
-h3 { color: #666; margin-top: 0.5em; margin-bottom: 0.5em; }
+h1 { color: #000; margin-top: 0.5em; }
+h2 { color: #333; margin-top: 0.5em; margin-bottom: 0.5em; }
+h3 { color: #666; margin-top: 0.5em; }
 
 body > div {
 	margin: 1em;
@@ -20,10 +20,42 @@ table {
 }
 
 th, td {
-	border: 1px solid #666;
+	border-width: 1px;
+	border-style: solid;
 	padding: 0.5em;
 }
 
 #event-stream {
 	margin: 1em;
+}
+
+#alliances-wrapper {
+	display: flex;
+}
+
+.alliance {
+	padding-right: 1em;
+}
+
+#blue-alliance > h2 {
+	color: #44F;
+}
+
+#blue-alliance th, #blue-alliance td {
+	border-color: #44F;
+}
+
+#red-alliance > h2 {
+	color: #F44;
+}
+
+#red-alliance th, #red-alliance td {
+	border-color: #F44;
+}
+
+#team-highlight {
+	background-color: #FF0;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
 }
