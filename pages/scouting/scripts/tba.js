@@ -26,7 +26,11 @@ class TBA {
 	}
 
 	get_event_matches() {
-		return this.get(`/event/${this.event}/matches/simple`)
+		return this.get(`/event/${this.event}/matches/simple`);
+	}
+	
+	get_event_team_statuses() {
+		return this.get(`/event/${this.event}/teams/statuses`);
 	}
 
 	get_team_matches() {
@@ -34,7 +38,7 @@ class TBA {
 			console.error("Team not set. Function can not be called.");
 			return null;
 		}
-		return this.get(`/team/${this.team}/event/${this.event}/matches/simple`)
+		return this.get(`/team/${this.team}/event/${this.event}/matches/simple`);
 	}
 
 	get_team_status() {
@@ -42,6 +46,6 @@ class TBA {
 			console.error("Team not set. Function can not be called.");
 			return null;
 		}
-		return this.get(`/team/${this.team}/event/${this.event}/status`)
+		return this.get(`/team/${this.team}/event/${this.event}/status`);
 	}
 }
