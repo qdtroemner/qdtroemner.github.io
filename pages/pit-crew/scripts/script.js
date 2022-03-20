@@ -1,8 +1,10 @@
-const EVENT = '2022wasam';
-const TEAM = 'frc2929';
+// @TODO: add team names
+
+const EVENT = '2022incol';
+const TEAM = 'frc1024';
 var client = new TBA(EVENT, TEAM);
 
-const PARENT_URL = 'localhost';
+const PARENT_URL = 'qdtroemner.github.io';
 
 var comp_level_enum = {
 	"qm": "qualification",
@@ -52,7 +54,7 @@ function set_next_match_info() {
 				for (match of event_matches_data) {
 					if (match.key == next_match_key) {
 						// Match #
-						document.getElementById('next-match-label').innerHTML = `Next match is ${comp_level_enum[match.comp_level]} ${match.match_number}`;
+						document.getElementById('next-match-label').innerHTML = `Our next match is ${comp_level_enum[match.comp_level]} ${match.match_number}`;
 						// ETA
 						let estimated_UNIX_start = match.predicted_time;
 						let formatted_estimated_start = getTimeFromUNIX(estimated_UNIX_start);
