@@ -1,5 +1,5 @@
-const EVENT = '2022incol';
-const TEAM = 'frc1024';
+const EVENT = '2022wasam';
+const TEAM = 'frc2929';
 var client = new TBA(EVENT, TEAM);
 
 const PARENT_URL = 'localhost';
