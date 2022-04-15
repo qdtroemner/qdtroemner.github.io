@@ -1,6 +1,6 @@
 // @TODO: add team names
 
-const EVENT = '2022incol';
+const EVENT = '2022incmp';
 const TEAM = 'frc1024';
 var client = new TBA(EVENT, TEAM);
 
