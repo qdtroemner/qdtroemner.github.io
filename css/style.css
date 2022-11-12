@@ -17,12 +17,11 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-	max-width: 600px;
 	margin: 0 auto;
 }
 
 section {
-	margin: 1em 1.5em;
+	margin: 1em 5em;
 	position: relative;
 }
 
@@ -47,67 +46,12 @@ i {
 	align-items: center;
 	justify-content: center;
 	z-index: 10000;
+	padding: 0.25em 0;
 }
 
 #h-title {
-	font-size: 1.6em;
+	font-size: 2em;
 }
-
-/* START HENRY VOTING AD */
-
-/*
-.henry-text {
-	position: absolute;
-	max-width: 600px;
-	color: white;
-	line-height: 1em;
-}
-
-@media only screen and (min-width: 300px) {
-	#henry-text {
-		top: 0;
-		margin: 0.5em 0.5em 0 0.5em;
-		font-size: 2em;
-	}
-	
-	#voting-info {
-		bottom: 0;
-		font-size: 1.5em;
-		margin: 0 0.5em 0.5em 0.5em;
-	}
-}
-
-@media only screen and (min-width: 375px) {
-	#henry-text {
-		top: 0;
-		margin: 0.5em 0.5em 0 0.5em;
-		font-size: 2.5em;
-	}
-	
-	#voting-info {
-		bottom: 0;
-		font-size: 1.5em;
-		margin: 0 0.5em 0.5em 0.5em;
-	}
-}
-
-@media only screen and (min-width: 600px) {
-	#henry-text {
-		top: 0;
-		margin: 0.5em 0.5em 0 0.5em;
-		font-size: 4em;
-	}
-	
-	#voting-info {
-		bottom: 0;
-		font-size: 2.5em;
-		margin: 0 0.5em 0.5em 0.5em;
-	}
-}
-*/
-
-
-/* END HENRY VOTING AD */
 
 #social-wrapper {
 	display: flex;
@@ -121,6 +65,29 @@ i {
 
 .a-li {
 	font-size: 1em;
+}
+
+#photo-gallery {
+
+}
+
+#gallery-container {
+	/*display: flex;
+	flex-direction: row;
+	max-height: 500px;*/
+	overflow: scroll;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#gallery-container > img {
+	max-height: 15em;
+	height: auto;
+	margin: 1em;
+	/*position: absolute;
+	height: 100%;
+	width: auto;*/
 }
 
 #instagram-highlights {
