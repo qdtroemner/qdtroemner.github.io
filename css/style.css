@@ -47,8 +47,12 @@ section {
 	color: rgb(175, 175, 175);
 }
 
-#nav-wrapper {
+#web-nav-wrapper {
 	padding-top: 2em;
+}
+
+#mobile-nav-wrapper {
+	display: none;
 }
 
 #nav-text::before {
@@ -134,4 +138,38 @@ section {
 
 .a-social {
 	text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+	#web-nav-wrapper {
+		display: none;
+	}
+
+	#mobile-nav-wrapper {
+		padding-left: 0;
+		height: 5em;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#mobile-nav-text {
+		text-transform: uppercase;
+		font-size: 2em;
+		position: relative;
+	}
+
+	#mobile-nav-text::before {
+		content: '*';
+		position: absolute;
+		left: -0.4em;
+		top: -0.1em;
+	}
+
+	#time-wrapper {
+		padding: 0;
+		display: flex;
+		justify-content: center;
+	}
 }
