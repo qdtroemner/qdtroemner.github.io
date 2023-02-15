@@ -13,6 +13,10 @@
     src: url("../fonts/LT_Remark.otf");
 }
 
+
+
+
+
 * {
     margin: 0;
 	font-family: 'Helvetica Neue';
@@ -46,6 +50,10 @@ section {
 	font-family: 'LT Remark';
 	color: rgb(175, 175, 175);
 }
+
+
+
+
 
 #web-nav-wrapper {
 	padding-top: 2em;
@@ -96,6 +104,10 @@ section {
 	width: 1.5em;
 }
 
+
+
+
+
 #time-wrapper {
 	padding-top: 1em;
 	width: 100%;
@@ -104,6 +116,40 @@ section {
 #time-display {
 	font-size: 2em;
 }
+
+
+
+
+
+#nav-links {
+
+}
+
+#links-list-wrapper {
+	list-style-type: none;
+}
+
+#links-list-wrapper > li {
+	margin: 1em 0;
+}
+
+#links-list-wrapper > li > a {
+	color: black;
+	font-family: 'Helvetica Neue';
+	font-size: 4em;
+	transition: font-size 0.5s;
+	text-underline-offset: .2em;
+	font-weight: bold;
+	letter-spacing: -0.2rem;
+}
+
+#links-list-wrapper > li > a:hover {
+	font-size: 5em;
+}
+
+
+
+
 
 #footer-wrapper {
 	position: absolute;
@@ -140,7 +186,17 @@ section {
 	text-decoration: none;
 }
 
+
+
+
+
 @media screen and (max-width: 600px) {
+	section {
+		padding: 0;
+	}
+
+
+	
 	#web-nav-wrapper {
 		display: none;
 	}
@@ -155,9 +211,10 @@ section {
 	}
 
 	#mobile-nav-text {
-		text-transform: uppercase;
-		font-size: 2em;
+		text-transform: lowercase;
+		font-size: 9vw;
 		position: relative;
+		letter-spacing: -0.1rem;
 	}
 
 	#mobile-nav-text::before {
@@ -167,9 +224,28 @@ section {
 		top: -0.1em;
 	}
 
+
+
+
+
 	#time-wrapper {
 		padding: 0;
 		display: flex;
 		justify-content: center;
+	}
+
+
+
+	#nav-links {
+		margin: 3em 0;
+	}
+
+	#links-list-wrapper {
+		padding: 0;
+		text-align: center;
+	}
+
+	#links-list-wrapper > li > a {
+		font-size: 2.5em;
 	}
 }
