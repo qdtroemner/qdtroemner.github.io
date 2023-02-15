@@ -49,6 +49,7 @@ section {
 .serif {
 	font-family: 'LT Remark';
 	color: rgb(175, 175, 175);
+	letter-spacing: -0.05em;
 }
 
 
@@ -130,7 +131,7 @@ section {
 }
 
 #links-list-wrapper > li {
-	margin: 1em 0;
+	margin: 2em 0;
 }
 
 #links-list-wrapper > li > a {
@@ -246,6 +247,6 @@ section {
 	}
 
 	#links-list-wrapper > li > a {
-		font-size: 2.5em;
+		font-size: 3em;
 	}
 }
