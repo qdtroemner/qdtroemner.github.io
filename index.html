@@ -1,65 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>QUENTIN TROEMNER</title>
-
-	<script src="https://kit.fontawesome.com/f086d06436.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="icon" href="./images/asterisk.jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔌</text></svg>">
+    <title>AI in the Smart Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .nav-btn.active {
+            border-bottom-color: #4f46e5; /* indigo-600 */
+            color: #4f46e5;
+            font-weight: 600;
+        }
+        nav {
+            top: 0;
+            position: sticky;
+        }
+        section::before {
+            display: block;
+            content: " ";
+            margin-top: -4rem;
+            height: 4rem;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        figure {
+            background: #f5f5f5;
+            padding: 15px;
+        }
+        figcaption {
+            font-size: 0.8em;
+        }
+        a {
+            color: #4f46e5 !important;
+        }
+        .citation {
+            text-indent: -20px;
+            padding-left: 20px;
+        }
+    </style>
 </head>
+<body class="bg-gray-50 text-gray-800">
 
-<body>
-	<header id="web-nav-wrapper">
-		<h1 id="nav-text">
-			Quentin Troemner <span>//</span>
-			<!--<a href="">Gallery</a> <br>
-			<a href="">Inspiration</a><br>
-			<a href="">About</a>-->
-		</h1>
-	</header>
+    <header class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-indigo-700">⚡ AI in the Smart Grid</h1>
+            <p class="mt-1 text-lg text-gray-600">An Educational Resource on AI & Smart Metering</p>
+        </div>
+    </header>
 
-	<header id="mobile-nav-wrapper">
-		<h1 id="mobile-nav-text">Quentin Troemner</h1>
-	</header>
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div id="nav-container" class="flex space-x-4">
+                <a class="nav-btn active text-gray-500 py-4 px-2 border-b-2 border-transparent text-sm font-medium hover:border-gray-300 hover:text-gray-700" href="#tech">The Technology</a>
+                <a class="nav-btn text-gray-500 py-4 px-2 border-b-2 border-transparent text-sm font-medium hover:border-gray-300 hover:text-gray-700" href="#social">Social Factors</a>
+                <a class="nav-btn text-gray-500 py-4 px-2 border-b-2 border-transparent text-sm font-medium hover:border-gray-300 hover:text-gray-700" href="#ethics">Ethical Debates</a>
+                <a class="nav-btn text-gray-500 py-4 px-2 border-b-2 border-transparent text-sm font-medium hover:border-gray-300 hover:text-gray-700" href="#citations">Works Cited</a>
+                <a class="nav-btn text-gray-500 py-4 px-2 border-b-2 border-transparent text-sm font-medium hover:border-gray-300 hover:text-gray-700" href="#more">Learn More</a>
+            </div>
+        </div>
+    </nav>
 
-	<section id="time-wrapper">
-		<h3 class="serif" id="time-display"></h3>
-	</section>
+    <main class="max-w-6xl mx-auto p-4 sm:p-8 space-y-8">
 
-	<section id="nav-links">
-		<ul id="links-list-wrapper">
-			<li> <a href="">Gallery</a> </li>
-			<li> <a href="">Inspiration</a> </li>
-			<li> <a href="">About</a> </li>
-		</ul>
-	</section>
+        <!-- Section 1: The Technology -->
+        <section id="tech" class="content-section space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">What is AI in the Smart Grid?</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    In the context of our homes and power systems, "AI-enabled technology" often refers to the sophisticated data analysis performed on information collected by <b>smart meters</b>. The push for this technology comes from the need to make our power grids more efficient, especially as we add more renewable energy sources like wind and solar. AI helps manage the grid, balance supply and demand, and helps consumers track their energy use.
+                </p>
+                <figure class="mb-4">
+                    <img src="https://sense.com/wp-content/uploads/2024/05/Smart-meter-on-wall.jpg" alt="Image of a modern smart meter" class="w-full h-auto object-cover rounded-md mb-4" onerror="this.src='https://placehold.co/800x400/e2e8f0/64748b?text=Image+Not+Available'; this.onerror=null;">
+                    <figcaption>An Itron smart electricity meter. Image taken from <a href="https://sense.com/consumer-blog/how-smart-meters-can-save-you-energy-and-money/">Sense.com</a></figcaption>
+                </figure>
+                <p class="text-gray-700 leading-relaxed">
+                    This technology is primarily developed by utility companies, grid operators, and technology firms (often in collaboration with academic researchers) to improve grid stability and offer new services to customers.
+                </p>
+            </div>
 
-	<footer id="footer-wrapper">
-		<div id="info-label">
-			<h3 class="serif">Work in Progress...</h3>
-		</div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">How it Works: Non-intrusive Load Monitoring (NILM)</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    The key AI application is called <b>Non-intrusive Load Monitoring (NILM)</b>. A smart meter records the <i>total</i> electricity consumption for an entire house. NILM is a set of machine learning algorithms that takes this single point of data and mathematically separates it by its changes over time to "see" the energy signatures of <i>individual</i> appliances.
+                </p>
+                <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 my-4 text-gray-700">
+                    <i>"Non-Intrusive Load Monitoring is an area in computational sustainability that aims at determining which appliances are operating from the aggregated load reported by a smart meter"</i> (Salem et al., 2020).
+                </blockquote>
+                
+                <p class="text-gray-700 leading-relaxed mb-6">Here is a simple breakdown of the process:</p>
+                <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4 bg-gray-50 p-6 rounded-lg">
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md border border-indigo-200"">
+                        <span class="text-6xl" title="House">🏠</span>
+                        <p class="font-semibold">1. Total Home Energy</p>
+                        <p class="text-sm text-gray-600">All appliances running at once.</p>
+                    </div>
+                    <div class="text-4xl text-gray-400 font-light hidden md:block">→</div>
+                    <div class="text-4xl text-gray-400 font-light md:hidden">↓</div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md border border-indigo-200">
+                        <span class="text-6xl" title="Smart Meter with AI">🧠</span>
+                        <p class="font-semibold">2. Smart Meter + AI Model</p>
+                        <p class="text-sm text-gray-600">AI (NILM) analyzes the changes in total consumption over time.</p>
+                    </div>
+                    <div class="text-4xl text-gray-400 font-light hidden md:block">→</div>
+                    <div class="text-4xl text-gray-400 font-light md:hidden">↓</div>
+                    <div class="flex flex-row md:flex-col justify-around w-full md:w-auto space-x-4 md:space-x-0 md:space-y-2 text-center">
+                        <div class="p-2 bg-white rounded-lg shadow-md border border-indigo-200">
+                            <span class="text-4xl" title="Refrigerator">❄️</span>
+                            <p class="text-sm font-medium">Refrigerator</p>
+                        </div>
+                        <div class="p-2 bg-white rounded-lg shadow-md border border-indigo-200">
+                            <span class="text-4xl" title="Television">📺</span>
+                            <p class="text-sm font-medium">Television</p>
+                        </div>
+                        <div class="p-2 bg-white rounded-lg shadow-md border border-indigo-200">
+                            <span class="text-4xl" title="Air Conditioner">💨</span>
+                            <p class="text-sm font-medium">Air Conditioner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div id="social-link-wrapper">	
-			<a class="a-social" target="_blank" href="https://www.instagram.com/qdtroemner/">
-				<i class="fab fa-instagram fa-2x"></i>
-			</a>
-			<a class="a-social" target="_blank" href="https://open.spotify.com/user/curtliom">
-				<i class="fab fa-spotify fa-2x"></i>
-			</a>
-			<a class="a-social" target="_blank" href="https://github.com/qdtroemner">
-				<i class="fab fa-github fa-2x"></i>
-			</a>
-			<a class="a-social" target="_blank" href="https://snapchat.com/add/qtroemner">
-				<i class="fab fa-snapchat fa-2x"></i>
-			</a>
-		</div>
-	</footer>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Purported & Actual Benefits</h3>
+                <figure class="mb-4">
+                    <img src="https://s3.amazonaws.com/cms.ipressroom.com/264/files/20213/608022c4b3aed331e3354d45_2021-0422-Renewable-Control-Hero/2021-0422-Renewable-Control-Hero_hero.jpg" alt="Duke Energy's distribution control room" class="w-full h-auto object-cover rounded-md mb-4" onerror="this.src='https://placehold.co/800x400/e2e8f0/64748b?text=Image+Not+Available'; this.onerror=null;">
+                    <figcaption>Duke Energy's Renewable Control Center. Image taken from <a href="https://illumination.duke-energy.com/articles/look-inside-duke-energys-renewable-control-center">duke-energy.com</a></figcaption>
+                </figure>
+                <p class="text-gray-700 leading-relaxed mb-4">The benefits of using AI in the grid are promoted for both consumers and utility providers. For consumers, it offers detailed feedback that can help them save money. For utility companies, it's a powerful tool for managing the entire grid.</p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <li class="p-4 bg-green-50 rounded-lg border border-green-200 text-green-700">
+                        <h4 class="font-semibold text-green-800">For Consumers</h4>
+                        <p>Detailed feedback on appliance usage can help consumers:</p>
+                            <ul class="list-disc pl-5">
+                                <li>Change their habits</li>
+                                <li>Identify failing or faulty appliances</li>
+                                <li>Reduce their electricity bill</li>
+                            </ul>
+                        <p class="text-green-700">This is part of demand-side management, which is defined as "the actions that influence the way consumers use electricity to achieve savings and higher efficiency in energy use" (Salem et al., 2020).</p>
+                    </li>
+                    <li class="p-4 bg-blue-50 rounded-lg border border-blue-200 text-blue-700">
+                        <h4 class="font-semibold text-blue-800">For Utility Companies and the Grid</h4>
+                            <p>Smart metering provides utility companies with:</p>
+                                <ul class="list-disc pl-5">
+                                    <li>"Improved forecasting of renewable energy generation"</li>
+                                    <li>"Enhanced grid resilience"</li>
+                                    <li>"Better supply-demand balancing"</li>
+                                </ul>
+                            <p>(Henao et al., 2025).</p>
+                        <p class="text-blue-700">This can be instrumental for preventing blackouts and integrating unstable renewable sources.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-	<script src="./js/script.js"></script>
-	<script src="./js/galleries.js"></script>
+        <!-- Section 2: Social Factors -->
+        <section id="social" class="content-section space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Key Social Factors</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">AI technology is not developed in a vacuum. It is shaped by social needs, economic forces, and existing power structures. Here are two key factors shaping AI in the smart grid.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-gray-50 rounded-lg border">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">1. The Material Cost of "Green" AI</h3>
+                            <figure class="mb-4">
+                                <img src="https://ichef.bbci.co.uk/images/ic/1920xn/p0df8j8m.jpg.webp" alt="An Australian lithium mine" class="w-full h-auto object-cover rounded-md mb-4" onerror="this.src='https://placehold.co/600x300/e2e8f0/64748b?text=Image+Not+Available'; this.onerror=null;">
+                                <figcaption>Greenbushes lithium mine in Australia. Taken from <a href="https://www.bbc.com/future/article/20221110-how-australia-became-the-worlds-greatest-lithium-supplier">BBC.com</a></figcaption>
+                            </figure>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            A major social driver for grid AI is the urgent need to decarbonize and fight climate change. However, as Kate Crawford (2021) argues in <i>Atlas of AI</i>, this "green" technology has a massive physical footprint.
+                        </p>
+                        <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 my-4 text-gray-700">
+                            <i>"AI is not an abstract or immaterial force... but a material infrastructure"</i> that relies on <i>"lithium pools under the Clayton Valley... exsanguinated—extracted for batteries that are destined for landfill"</i> (Crawford, 2021).
+                        </blockquote>
+                        <p class="text-gray-700 leading-relaxed">
+                            This social context is a deep contradiction: the push for computational efficiency to save the environment is, at its base, <i>"an extractive industry"</i> that consumes vast amounts of energy, water, and minerals from the Earth.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-gray-50 rounded-lg border">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">2. Institutional Power & Data Control</h3>
+                        <figure class="mb-4">
+                            <img src="https://www.gregorybufithis.com/wp-content/uploads/2020/10/Big-Data-Control.jpg" alt="Picture of hand snatching data" class="w-full h-auto object-cover rounded-md mb-4" onerror="this.src='https://placehold.co/600x300/e2e8f0/64748b?text=Image+Not+Available'; this.onerror=null;">
+                            <figcaption>A corporate hand snatches data. Taken from <a href="https://www.gregorybufithis.com/2020/10/29/the-futility-of-controlling-or-regulating-technology-in-the-modern-world/">gregorybufithis.com</a></figcaption>
+                        </figure>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Smart meters fundamentally change the relationship between consumers and utility companies (institutions). Through smart metering and other advancements, these institutions now have access to a continuous stream of highly personal data.
+                        </p>
+                        <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 my-4 text-gray-700">
+                            <i>"The data collected by smart meters is often controlled by utility providers, creating a power imbalance... consumers may lack meaningful control over how their detailed energy data is used, shared, or sold"</i> (Carmody et al., 2021).
+                        </blockquote>
+                        <p class="text-gray-700 leading-relaxed">
+                            This power dynamic shapes the technology's application, often prioritizing grid-level optimization or corporate data-sharing partnerships over the individual's right to control their own information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Ethical Debates -->
+        <section id="ethics" class="content-section space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Major Ethical Debates</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">The same capabilities that make this AI useful also create significant ethical risks. The academic and regulatory discourse highlights several key "matters of concern" (Henao et al., 2025). Here are two of the most significant.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-gray-50 rounded-lg border">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">1. Privacy and Surveillance</h3>
+                        <figure class="mb-4">
+                            <img src="https://cdn.prod.website-files.com/5e027ca288c99e9724b404be/67093a1d928ad72cadd7b933_surv.webp" alt="Many surveillance cameras" class="w-full h-auto object-cover rounded-md mb-4" onerror="this.src='https://placehold.co/600x300/e2e8f0/64748b?text=Image+Not+Available'; this.onerror=null;">
+                            <figcaption>Surveillance cameras looking in every direction. Taken from <a href="https://www.ajl.org/harms/surveillance">ajl.org</a></figcaption>
+                        </figure>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            This is the most widely discussed ethical issue. Because NILM can identify individual appliances, it can predict deeply personal information about a household's occupants, routines, and lifestyle.
+                        </p>
+                        <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 my-4 text-gray-700">
+                            <i>"through smart meter obtained energy data, home energy providers can use AI to reveal private consumer information such as households' electrical appliances, their time and frequency of usage, including number and model of appliance"</i> (Carmody et al., 2021).
+                        </blockquote>
+                        <p class="text-gray-700 leading-relaxed">
+                            This data can reveal "when occupants are home, their sleep patterns, and even the type of media they consume" (Carmody et al., 2021). This turns a simple utility device into a potential surveillance tool, raising massive questions about consent and data protection.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-gray-50 rounded-lg border">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">2. Accountability & Transparency</h3>
+                        <figure class="mb-4">
+                            <img src="https://blog.ml.cmu.edu/wp-content/uploads/2019/05/illustration-970x438.png" alt="Representation of a black-box system" class="w-full h-auto object-cover rounded-md mb-4" onerror="this.src='https://placehold.co/600x300/e2e8f0/64748b?text=Image+Not+Available'; this.onerror=null;">
+                            <figcaption>Representation of a black-box system. Taken from <a href="https://blog.ml.cmu.edu/2019/05/17/explaining-a-black-box-using-deep-variational-information-bottleneck-approach/">blog.ml.cmu.edu</a></figcaption>
+                        </figure>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Many machine learning models are "black boxes," meaning even their creators can't fully explain <i>how</i> they reach a specific decision. This is a massive problem when AI is used in "critical infrastructures" like the power grid (Volkova & Anapyanova, 2024).
+                        </p>
+                        <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 my-4 text-gray-700">
+                            <i>"adopting AI in critical infrastructures presents challenges due to unclear regulations and lacking risk quantification techniques"</i> (Volkova & Anapyanova, 2024).
+                        </blockquote>
+                        <p class="text-gray-700 leading-relaxed">
+                            If an AI-driven system makes a mistake, like incorrectly forecasting demand, leading to a blackout; or unfairly billing a customer; who is accountable? The lack of transparency in these models makes it difficult to assign responsibility, creating one of the "critical issues around transparency... accountability, and fairness in power distribution" (Henao et al., 2025).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Citations -->
+        <section id="citations" class="content-section space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Works Cited</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">This project incorporates analysis and direct citations from the following sources.</p>
+                <ul class="space-y-4 text-sm text-gray-700 list-disc list-outside pl-5">
+                    <li>
+                        <p class="citation">Carmody, Jillian, et al. “AI and Privacy Concerns: A Smart Meter Case Study.” <i>Journal of Information, Communication and Ethics in Society</i>, vol. 19, no. 4, 29 July 2021, pp. 492–505, www.emerald.com/insight/content/doi/10.1108/JICES-04-2021-0042/full/html, https://doi.org/10.1108/jices-04-2021-0042.</p>
+                    </li>
+                    <li>
+                        <p class="citation">Crawford, Kate. <i>Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence.</i> Yale University Press, 2021, pp. 23–51.</p>
+                    </li>
+                    <li>
+                        <p class="citation">Henao, Felipe, et al. “AI in Power Systems: A Systematic Review of Key Matters of Concern.” <i>Energy Informatics</i>, vol. 8, no. 1, 2 June 2025, https://doi.org/10.1186/s42162-025-00529-1.</p>
+                    </li>
+                    <li>
+                        <p class="citation">Salem, Hajer, et al. “A Review on Non-Intrusive Load Monitoring Approaches Based on Machine Learning.” <i>Springer EBooks</i>, 1 Jan. 2020, pp. 109–131, https://doi.org/10.1007/978-3-030-42726-9_5.</p>
+                    </li>
+                    <li>
+                        <p class="citation">Volkova, Anna, et al. “Being Accountable Is Smart: Navigating the Technical and Regulatory Landscape of AI-Based Services for Power Grid.” <i>Proceedings of the 2024 International Conference on Information Technology for Social Good, ACM</i>, 2024, pp. 118–26. Crossref, https://doi.org/10.1145/3677525.3678651.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 5: Learn More -->
+        <section id="more" class="content-section space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Want to Learn More?</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">Here are five additional resources if you would like to learn more about this topic, beyond the literature already cited.</p>
+                <ul class="space-y-4 text-gray-700 list-disc list-outside pl-5">
+                    <li>
+                        <a href="https://www.energy.gov/sites/default/files/2024-04/AI%20EO%20Report%20Section%205.2g(i)_043024.pdf">AI for Energy: Opportunities for a Modern Grid and Clean Energy Economy</a> from the U.S. Department of Energy
+                        <p class="pl-5">US DoE's report on how AI can be used to improve the grid. Includes some risks of using AI as well.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.csis.org/analysis/ai-grid-opportunities-risks-and-safeguards">AI for the Grid: Opportunities, Risks, and Safeguards</a> by the Center for Strategic & International Studies (CSIS)
+                        <p class="pl-5">A report focusing on the possiblities, limitations, and possible fixes to the limitations of AI in the grid.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.rand.org/pubs/articles/2025/ai-and-the-future-of-the-us-electric-grid.html">AI and the Future of the U.S. Electric Grid</a> by RAND Corporation
+                        <p class="pl-5">An article looking at how the explosion of AI technology will affect the U.S. power grid.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=AnOe4gJC308">Non-intrusive Load Monitoring Using Machine Learning Algorithms</a> from Duke University Energy Initiative
+                        <p class="pl-5">A brief YouTube video providing a deeper dive into how NILM works.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0378778824000069">A review of current methods and challenges of advanced deep learning-based NILM in residential context</a> from the journal Energy and Buildings
+                        <p class="pl-5">This paper addresses the state of NILM technology, current limitations and future approaches.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white mt-12 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+            <p>An educational resource created by Quentin T. for HONR 313: AI & Society.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navContainer = document.getElementById('nav-container');
+            const navButtons = document.querySelectorAll('.nav-btn');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            navContainer.addEventListener('click', (e) => {
+                const clickedButton = e.target.closest('.nav-btn');
+                if (!clickedButton) return;
+
+                const targetId = clickedButton.dataset.target;
+                
+                navButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                clickedButton.classList.add('active');
+            });
+        });
+    </script>
+
 </body>
-
 </html>
